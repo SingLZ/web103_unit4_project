@@ -1,10 +1,10 @@
-# WEB103 Project 4 - *Name of App Here*
+# WEB103 Project 4 - *DIY Bottle*
 
-Submitted by: **Your name here**
+Submitted by: **Sing Zheng**
 
-About this web app: **App description here**
+About this web app: **App for user to diy their water bottles**
 
-Time spent: **X** hours
+Time spent: **8** hours
 
 ## Required Features
 
@@ -56,7 +56,7 @@ Describe any challenges encountered while building the app or any additional con
 
 ## License
 
-Copyright [yyyy] [name of copyright owner]
+Copyright [2026] [name of copyright owner]
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
