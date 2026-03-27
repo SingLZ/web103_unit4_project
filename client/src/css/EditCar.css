@@ -1,0 +1,132 @@
+.edit-layout {
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+.edit-layout h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 28px;
+}
+
+.back-link {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.5);
+  font-size: 13px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 0 20px;
+  width: auto;
+  height: auto;
+  transition: color 0.15s;
+  font-family: inherit;
+  display: block;
+}
+.back-link:hover { color: white; border: none; }
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.field label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.45);
+  font-weight: 500;
+}
+.field input[type="text"] {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  padding: 10px 14px;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0;
+}
+.field input[type="text"]:focus { outline: none; border-color: rgba(255,255,255,0.5); }
+
+.color-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+.color-swatch {
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.2);
+  cursor: pointer; position: relative;
+  transition: transform 0.15s, border-color 0.15s;
+  padding: 0; margin: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.color-swatch:hover { transform: scale(1.12); }
+.color-swatch.selected { border-color: white; transform: scale(1.15); }
+.check { font-size: 14px; color: white; text-shadow: 0 0 4px rgba(0,0,0,0.8); font-weight: 700; }
+.selected-label { font-size: 13px; color: rgba(255,255,255,0.7); }
+
+.pill-group { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill {
+  padding: 7px 16px; border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.7);
+  font-size: 13px; cursor: pointer;
+  transition: all 0.15s; font-family: inherit;
+  margin: 0; width: auto; height: auto;
+}
+.pill:hover { background: rgba(255,255,255,0.12); color: white; }
+.pill.selected { background: white; color: #111; border-color: white; font-weight: 600; }
+
+.edit-price {
+  font-size: 14px;
+  color: rgba(255,255,255,0.55);
+  padding: 12px 0;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.edit-price strong { color: white; font-size: 18px; }
+
+.error-msg {
+  background: rgba(183,28,28,0.35);
+  border: 1px solid rgba(255,80,80,0.5);
+  border-radius: 8px;
+  color: #ff8a80;
+  font-size: 13px;
+  padding: 10px 14px;
+  margin: 0;
+}
+
+.edit-actions { display: flex; gap: 12px; }
+
+.save-btn {
+  flex: 1; background: white; color: #111;
+  border: none; border-radius: 10px;
+  padding: 13px; font-size: 14px; font-weight: 700;
+  cursor: pointer; transition: opacity 0.2s;
+  text-transform: uppercase; letter-spacing: 0.06em;
+  margin: 0; width: auto; height: auto;
+}
+.save-btn:hover:not(:disabled) { opacity: 0.85; }
+.save-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+
+.del-btn {
+  flex: 1; background: rgba(183,28,28,0.3);
+  border: 1px solid rgba(255,80,80,0.3);
+  color: #ff8a80; border-radius: 10px;
+  padding: 13px; font-size: 14px; font-weight: 700;
+  cursor: pointer; transition: opacity 0.2s;
+  text-transform: uppercase; letter-spacing: 0.06em;
+  margin: 0; width: auto; height: auto;
+}
+.del-btn:hover:not(:disabled) { background: rgba(183,28,28,0.55); }
+.del-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+
+.edit-loading { text-align: center; color: rgba(255,255,255,0.5); padding: 80px 0; font-size: 15px; }
